@@ -37,13 +37,13 @@ You probably noticed but even for the client side the players don't have to do a
 You can adapt this script to automate the .zipping of the pack, make sure to use different names of files for "in development" and "in production" packs.
 ```bat
 rem prod
-rem tar.exe -a -c -f "<path to dropbox folder>\cc-pack.zip" ./cc-pack
+rem tar.exe -acf "<path to dropbox folder>\cc-pack.zip" cc-pack/*
 
 rem dev
-tar.exe -a -c -f "<path to dropbox folder>\cc-pack-dev.zip" ./cc-pack
+tar.exe -acf "<path to dropbox folder>\cc-pack-dev.zip" cc-pack/*
 
-rem client
-tar.exe -a -c -f "<path to your client resource packs>/cc-pack.zip" ./cc-pack
+rem 
+tar.exe -acf "<path to your client resource packs>\cc-pack.zip" cc-pack/*
 ```
 
 ## Warnings
